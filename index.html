@@ -164,6 +164,21 @@
               <li>Hydration and support stations</li>
             </ul>
           </article>
+          <article class="card">
+            <h3>Custom Trophies, Medals & Certificates</h3>
+            <p>
+              We design and deliver premium awards tailored to your academy or club. Every trophy, medal, and certificate can be fully customized with your logo, branding, and event theme.
+            </p>
+            <ul>
+              <li>Custom trophies with client branding</li>
+              <li>Medals for juniors and adults</li>
+              <li>Certificates of participation or achievement</li>
+              <li>Event‑specific designs and color themes</li>
+            </ul>
+            <p class="note">
+              A personalized perk of partnering with Whitemoon Pro Service — your event, your brand, elevated.
+            </p>
+          </article>
 
           <article class="card">
             <h3>Billing &amp; Financial Reporting</h3>
@@ -223,32 +238,36 @@
           </div>
         </div>
         <div>
-          <form class="contact-form">
+          <form action="https://formspree.io/f/mreyqzol" method="POST" class="contact-form">
             <div class="form-row">
               <label for="name">Name</label>
-              <input id="name" type="text" name="name" placeholder="Your name" />
+              <input id="name" type="text" name="name" placeholder="Your name" required />
             </div>
+          
             <div class="form-row">
               <label for="email">Email</label>
-              <input id="email" type="email" name="email" placeholder="you@example.com" />
+              <input id="email" type="email" name="email" placeholder="you@example.com" required />
             </div>
+          
             <div class="form-row">
               <label for="organization">Organization / Club</label>
               <input id="organization" type="text" name="organization" placeholder="Club, academy, or facility name" />
             </div>
+          
             <div class="form-row">
               <label for="event-type">Event Type</label>
               <input id="event-type" type="text" name="event-type" placeholder="Tournament, match play, social, etc." />
             </div>
+          
             <div class="form-row">
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" placeholder="Tell us about your event needs"></textarea>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your event needs" required></textarea>
             </div>
-            <button type="submit" class="btn primary" disabled>
-              Submit (Configure with your email service)
-            </button>
+          
+            <button type="submit" class="btn primary">Submit</button>
+          
             <p class="form-note">
-              This form is for layout only. Connect it to your preferred email or form service (e.g., Formspree, Netlify Forms).
+              Your message will be sent securely to whitemoonpro@outlook.com.
             </p>
           </form>
         </div>
