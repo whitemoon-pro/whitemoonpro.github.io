@@ -1,15 +1,17 @@
 :root {
-  --bg: #050814;
-  --bg-alt: #0b1020;
-  --card-bg: #101528;
-  --accent: #4ea8ff;
-  --accent-soft: rgba(78, 168, 255, 0.12);
-  --text-main: #f5f7ff;
-  --text-muted: #a5acc7;
-  --border-subtle: #252b3f;
-  --danger: #ff4e6a;
-  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --bg: #0A0A0A;
+  --bg-alt: #141414;
+  --card-bg: #1A1A1A;
+
+  --accent: #7ED957; /* tennis-ball green */
+  --accent-soft: rgba(126, 217, 87, 0.15);
+
+  --text-main: #FFFFFF;
+  --text-muted: #C7C7C7;
+
+  --border-subtle: #2A2A2A;
 }
+
 
 *,
 *::before,
@@ -147,6 +149,13 @@ body {
     display: none;
   }
 }
+
+.brand-logo {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
 
 /* Hero */
 
