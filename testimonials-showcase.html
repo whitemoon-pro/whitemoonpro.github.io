@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonials | Whitemoon Pro Service LLC</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="whitemoon-logo.png" class="brand-logo" alt="Whitemoon Logo" />
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="testimonials-showcase.html">Testimonials</a>
+        <a href="testimonials.html">Submit Testimonial</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section reveal">
+      <div class="container">
+        <div class="section-header center">
+          <h2>Testimonials</h2>
+          <p>Feedback from directors, coaches, parents, and players.</p>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal">
+            <p class="testimonial-text">“Whitemoon Pro Service elevated our tournaments to a new level.”</p>
+            <p class="testimonial-author">— Director, Clearwater Tennis Club</p>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <p class="testimonial-text">“Our players and parents consistently praise the organization.”</p>
+            <p class="testimonial-author">— Academy Manager, Zephyrhills</p>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <p class="testimonial-text">“The custom trophies added a premium touch families loved.”</p>
+            <p class="testimonial-author">— Tournament Director, Tampa</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">Whitemoon Pro Service LLC</p>
+      <p>© 2026 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => entry.isIntersecting && entry.target.classList.add("in-view"));
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
